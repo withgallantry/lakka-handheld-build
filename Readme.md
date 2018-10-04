@@ -10,7 +10,7 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 * Copy autostart.h into the .config folder in the LAKKA_DISK partition.
 * Copy the /software folder into the LAKKA_DISK partition.
 * Edit /software/retrogame/retrogame.cfg according to your GPIO configuration. You can use an existing retrogame.cfg if you have one.
-* Copy and Replace the config.txt in LAKKA with the one from this repository.
+* Copy and Replace the config.txt and distroconfig.txt in LAKKA with the one from this repository.
 
 
 ### File explanations
@@ -18,6 +18,7 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 | File / Directory | Explanation |
 | ------ | ------ |
 | autostart.h | This file is reponsible for everything that runs on startup |
+| config.txt | This file contains the configuration for the system |
 | /software | This contains all the software needed. This includes retrogame for controls and fbcp for copying the framebuffer |
 
 ### Configuring SPI Screen
