@@ -1,6 +1,6 @@
 # Lakka Handheld Edition
 
-[Lakka] is a lightweight OS for playing all your favourite retro games, problem is that it's typically not been designed for handheld systems. 
+[Lakka](http://www.lakka.tv) is a lightweight OS for playing all your favourite retro games, problem is that it's typically not been designed for handheld systems. 
 This repo contains a custom compilation of Lakka that includes fbtft, allowing you to use Lakka on smaller screens. I've also put together a few example config files that you can either use as they are or customise for your own needs.
 
 ### Getting started using example files
@@ -13,9 +13,17 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 * Copy and Replace the config.txt and distroconfig.txt in LAKKA with the one from this repository.
 
 ### Enable controls in games
-Following the steps above you should have Lakka booting and controllable by GPIO buttons. The only problem is when you start a game, the controls won't work. To fix this you need to enable SSH and WiFi via the Lakka menu. Once you've done this you can SSH into the box and run the following:
+Following the steps above you should have Lakka booting and controllable by GPIO buttons however when startng games the controls won't work. To fix this you need to [enable SSH](http://www.lakka.tv/doc/Accessing-Lakka-command-line-interface/) and [enable WiFi](http://www.lakka.tv/articles/2016/10/06/major-release-brings-wifi-and-simplified-interface/#wi-fi-configuration-interface) via the Lakka menu. Once you've done this you can SSH into the box and run the following:
  
+ ```$xslt
+sudo nano /etc/udev/rules.d/10-retrogame.rules
+```
 
+Add the following line and save
+
+```$xslt
+SUBSYSTEM=="input", ATTRS{name}=="retrogame", ENV{ID_INPUT_KEYBOARD}="1"
+```
 
 ### File explanations
 
