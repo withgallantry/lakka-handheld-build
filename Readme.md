@@ -27,6 +27,8 @@ Add the following line and save
 SUBSYSTEM=="input", ATTRS{name}=="retrogame", ENV{ID_INPUT_KEYBOARD}="1"
 ```
 
+Thanks to [Pi0cket](https://www.instagram.com/pi0cket/) for that!
+
 ### File explanations
 
 | File / Directory | Explanation |
