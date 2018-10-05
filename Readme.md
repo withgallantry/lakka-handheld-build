@@ -18,7 +18,7 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 Following the steps above you should have Lakka booting and controllable by GPIO buttons however when startng games the controls won't work. To fix this you need to [enable SSH](http://www.lakka.tv/doc/Accessing-Lakka-command-line-interface/) and [enable WiFi](http://www.lakka.tv/articles/2016/10/06/major-release-brings-wifi-and-simplified-interface/#wi-fi-configuration-interface) via the Lakka menu. Once you've done this you can SSH into the box and run the following:
  
  ```$xslt
-sudo nano /etc/udev/rules.d/10-retrogame.rules
+nano /etc/udev/rules.d/10-retrogame.rules
 ```
 
 Add the following line and save
