@@ -9,6 +9,7 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 * Burn the image to an SD Card and mount it.
 * Download this repository.
 * Copy autostart.h into the .config folder in the LAKKA_DISK partition.
+* Copy retroarch.cfg into the .config/retroarch folder replacing the existing one in the LAKKA_DISK partition.
 * Copy the /software folder into the LAKKA_DISK partition.
 * Edit /software/retrogame/retrogame.cfg according to your GPIO configuration. You can use an existing retrogame.cfg if you have one.
 * Copy and Replace the config.txt and distroconfig.txt in LAKKA with the one from this repository.
@@ -31,6 +32,7 @@ SUBSYSTEM=="input", ATTRS{name}=="retrogame", ENV{ID_INPUT_KEYBOARD}="1"
 | File / Directory | Explanation |
 | ------ | ------ |
 | autostart.h | This file is reponsible for everything that runs on startup |
+| retroarch.cfg | It is the config for Retroarch. This config has been tuned to turn Lakka into something a bit more small screen friendly. |
 | config.txt | This file contains the configuration for the system |
 | /software | This contains all the software needed. This includes retrogame for controls and fbcp for copying the framebuffer |
 
