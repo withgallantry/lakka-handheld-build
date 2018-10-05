@@ -5,6 +5,7 @@ This repo contains a custom compilation of Lakka that includes fbtft, allowing y
 
 ### Getting started using example files
 
+* Download the latest Lakka image from [releases](https://github.com/withgallantry/lakka-handheld-build/releases)
 * Burn the image to an SD Card and mount it.
 * Download this repository.
 * Copy autostart.h into the .config folder in the LAKKA_DISK partition.
